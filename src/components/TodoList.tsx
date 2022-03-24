@@ -1,7 +1,11 @@
 import { Todo, TodoType } from './Todo'
 
 // Define this
-interface StateProps {}
+interface StateProps {
+  incompleteTodos:TodoType[],
+  toggleTodoCompletion: Function,
+  removeTodo: Function
+}
 
 export const TodoList = (props: StateProps) => {
 
